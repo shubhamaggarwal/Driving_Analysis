@@ -12,7 +12,7 @@ def dec_tree_train(trainX, trainY):
 
 def linear_reg_train(trainX,trainY):
     regr = linear_model.LinearRegression()
-    regr.fit(trainX,trainY)
+    regr.fit(trainX, trainY)
     return regr
 
 def SVC_train(trainX,trainY):
@@ -20,3 +20,7 @@ def SVC_train(trainX,trainY):
     clf.fit(trainX,trainY)
     return clf
 
+def logistic_regr(trainX, trainY):
+    clf = linear_model.LogisticRegression()
+    clf.fit(trainX, trainY)
+    return clf
